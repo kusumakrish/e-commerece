@@ -2,10 +2,16 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import iSHOP from "../assests/iSHOP.png"
 import "./css.css"
+import Login from './login'
+import SignUp from './sineUp'
 
 const Nav = () => {
   return (
     <div>
+      <Login/>
+      <SignUp/>
+      {/* <Link to="/Login"><button type="button" class="btn btn-primary" style={{position:"relative",left:"400px"}}><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button></Link> */}
+      {/* <button type="button" class="btn btn-info" style={{position:"relative",left:"480px",top:"4px"}}><i class="fa-solid fa-cash-register"></i> Register</button> */}
         <img src={iSHOP} alt="iSHOP" style={{marginTop:"100px"}} className="ishop"/>
         <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid, nav" style={{marginLeft:"560px" , color:"black" , textAlign:"center"}}>

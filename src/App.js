@@ -6,19 +6,21 @@ import Home from './components/Home';
 import Cart from './Cart';
 import {CartProvider} from "react-use-cart"
 import { useState } from 'react';
+import Checkout from './components/checkout';
+import {Link } from "react-router-dom";
 
 function App() {
   const [cart , setCart] = useState(false);
   return (
     <div className="App">
+      <Link to="/cart"><button onClick={()=>setCart(true)} className='btn btn-success , cart'><i class="fa-solid fa-cart-arrow-down"></i>cart</button></Link>
       <CartProvider>
       <Nav/>
-      <i class="fa-solid fa-user-vneck-hair"></i>
-      <button onClick={()=>setCart(true)} className='cart'><i class="fa-solid fa-cart-arrow-down"></i>cart</button>
-      {cart ?<Cart/>: null}
       <Routes>
-        <Route path='/'  element={<Home/>}/>
+        {cart? (<Route path="/cart" element={<Cart/>}/>): null}
+      <Route path='/' element={<Home/>}/>
       <Route path='/store/Accessories'  element={<Accessories/>}/>
+      <Route path='/buynow' element={<Checkout/>}/>
       </Routes>
       </CartProvider>
     </div>

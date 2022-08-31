@@ -24,7 +24,6 @@ const Home = () => {
                     <img src={item.img} alt="cover" className='product-img-home'></img><br/><br/>
                     <span className='product-name'>{item.name}</span><br/>
                     <span className='product-cost'>$499 <del>$599</del></span><br/><br/>
-                    <button className="buy-btn">Buy Now</button>
                     <button className='cart-btn' onClick={()=>{addItem(item)}}>Add to cart</button>
                 </div>
                 )
