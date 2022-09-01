@@ -99,7 +99,6 @@ const Home = () => {
                   <button
                     className="cart-btn"
                     onClick={() => {
-
                       alert("Item added to cart Please Click On Cart To See Item");
                       addItem(item);
                     }}
