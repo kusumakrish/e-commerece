@@ -13,7 +13,7 @@ function App() {
   const [cart , setCart] = useState(false);
   return (
     <div className="App">
-      <Link to="/cart"><button onClick={()=>setCart(true)} className='btn btn-success , cart'><i class="fa-solid fa-cart-arrow-down"></i>cart</button></Link>
+      <Link to="/cart"><button onClick={()=>setCart(true)} className='btn btn-outline-primary , cart'><i class="fa-solid fa-cart-arrow-down"></i>cart</button></Link>
       <CartProvider>
       <Nav/>
       <Routes>

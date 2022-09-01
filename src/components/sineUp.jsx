@@ -3,7 +3,7 @@ import React from 'react'
 const SignUp = () => {
   return (
     <div>
-        <button type="button" class="btn btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal" style={{position:"relative",left:"420px",bottom:"-12px"}}><i class="fa-solid fa-cash-register"></i> signUp</button>
+        <button type="button" class="btn btn-outline-primary"data-bs-toggle="modal" data-bs-target="#exampleModal" style={{position:"relative",left:"420px",bottom:"27px"}}><i class="fa-solid fa-cash-register"></i> signUp</button>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">

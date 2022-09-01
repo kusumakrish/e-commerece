@@ -10,11 +10,9 @@ const Nav = () => {
     <div>
       <Login/>
       <SignUp/>
-      {/* <Link to="/Login"><button type="button" class="btn btn-primary" style={{position:"relative",left:"400px"}}><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button></Link> */}
-      {/* <button type="button" class="btn btn-info" style={{position:"relative",left:"480px",top:"4px"}}><i class="fa-solid fa-cash-register"></i> Register</button> */}
-        <img src={iSHOP} alt="iSHOP" style={{marginTop:"100px"}} className="ishop"/>
+        <img src={iSHOP} alt="iSHOP" style={{marginTop:"-126px"}} className="ishop"/>
         <nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid, nav" style={{marginLeft:"560px" , color:"black" , textAlign:"center"}}>
+  <div class="container-fluid, nav" style={{marginLeft:"630px" , marginTop:"-54px",color:"black" , textAlign:"center"}}>
     {/* <Link class="navbar-brand" to="#">Navbar</Link> */}
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -22,10 +20,10 @@ const Nav = () => {
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/" style={{color:"black"}}>Home</Link>
+          <Link class="nav-link active" aria-current="page" to="/" style={{color:"black",position:"relative",left:"10px"}}>Home</Link>
         </li>
         <li class="nav-item dropdown">
-          <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
+          <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style={{position:"relative",left:"60px"}}>
             Store
           </Link>
           <ul class="dropdown-menu" style={{width:"600px", height:"300px", marginLeft:"-87px"}} >
@@ -42,18 +40,6 @@ const Nav = () => {
                 <span>Mice & Keyboards <br/><br/>Music Creation<br/><br/> Networking & Server</span>
             </div>
           </ul>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="#">iPHONE</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="#">iPAD</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="#">MACBook</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="#">Acessories</Link>
         </li>
       </ul>
     </div>

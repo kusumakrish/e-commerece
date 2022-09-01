@@ -61,7 +61,7 @@ const Accessories = () => {
                     <img src={item.img} alt="cover" className='product-img'></img><br/><br/>
                     <span>{item.name}</span><br/>
                     <span className='product-cost'>$499 <del>$599</del></span><br/><br/>
-                    <button className='cart-btn' onClick={()=>{addItem(item)}}>Add to cart</button>
+                    <button className='cart-btn' onClick={()=>{alert("Item added to cart Please Click On Cart To See Item");addItem(item)}}>Add to cart</button>
                 </div>
                 )
             })
