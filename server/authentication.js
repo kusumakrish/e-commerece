@@ -1,5 +1,4 @@
 const Route = require("express").Router();
-const { Router } =require("express");
 const { user } = require("./db");
 const JWT = require("jsonwebtoken");
 

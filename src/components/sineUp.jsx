@@ -20,7 +20,7 @@ const SignUp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:9090/Auth/signUp", credentials)
+      .post("https://kusumakrishna524.herokuapp.com/Auth/signUp", credentials)
       .then((res) => setResponse(res.data));
       setDisplay(true);
   };
