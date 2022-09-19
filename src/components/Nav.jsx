@@ -2,16 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import iSHOP from "../assests/iSHOP.png"
 import "./css.css"
-import Login from './login'
-import SignUp from './sineUp'
 
 const Nav = () => {
   return (
     <div>
-      <Login/>
-      <SignUp/>
-        <img src={iSHOP} alt="iSHOP" style={{marginTop:"-126px"}} className="ishop"/>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <img src={iSHOP} alt="iSHOP" style={{marginTop:"0px"}} className="ishop"/>
+        <nav class="navbar navbar-expand-lg bg-light" style={{marginTop:"40px"}}>
   <div class="container-fluid, nav" style={{marginLeft:"630px" , marginTop:"-54px",color:"black" , textAlign:"center"}}>
     {/* <Link class="navbar-brand" to="#">Navbar</Link> */}
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,10 +16,10 @@ const Nav = () => {
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="/" style={{color:"black",position:"relative",left:"10px"}}>Home</Link>
+          <Link class="nav-link active" aria-current="page" to="/" style={{color:"black",position:"relative",left:"10px",top:"30px"}}>Home</Link>
         </li>
         <li class="nav-item dropdown">
-          <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style={{position:"relative",left:"60px"}}>
+          <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style={{position:"relative",left:"60px", top:"30px"}}>
             Store
           </Link>
           <ul class="dropdown-menu" style={{width:"600px", height:"300px", marginLeft:"-87px"}} >

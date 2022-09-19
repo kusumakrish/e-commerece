@@ -13,6 +13,7 @@ const Home = () => {
     <div>
       {/* <div className='header' style={{marginLeft:"230px" ,backgroundColor:"pink"}}></div> */}
       <div
+        style={{marginTop:"40px"}}
         id="carouselExampleIndicators"
         class="carousel slide"
         data-ride="carousel"
