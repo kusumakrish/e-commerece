@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./css.css";
 import axios from "axios";
+import Checkout from "./checkout";
 
 const Login = () => {
 
@@ -11,6 +12,8 @@ const Login = () => {
     userName:"",
     password:""
   })
+
+  const user = credentials.userName.split("@");
 
   const [response,setResponse] = useState("")
   
@@ -25,15 +28,21 @@ const Login = () => {
 
   console.log(response);
 
-  const handleSubmit=(e)=>{
+  const handleSubmit= (e)=>{
       e.preventDefault();
       console.log(credentials);
       axios.post("https://kusumakrishna524.herokuapp.com/login/login",credentials).then(res=> setResponse(res.data));
       setDisplay(true);
   }
+
+  if( response === "user Logged-in successfully"){
+    return(<Checkout user={user}/>)
+    }
+
+
   return (
     <div className="Container">
-      {display ? <h2 style={{color:"green"}}>{response}</h2> : null}
+      {display ? <div> <h2 style={{color:"green"}}>{response}</h2></div> : null}
       <h5 id="exampleModalLabel">
       Login
       </h5>
@@ -73,12 +82,12 @@ const Login = () => {
           />
         </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" required/>
           <label class="form-check-label" for="exampleCheck1">
             Check me out
           </label>
         </div>
-        <button type="submit" class="btn btn-primary" onClick={handleSubmit}>
+        <button type="submit" class="btn btn-primary" onClick= {handleSubmit}>
           Submit
         </button>
       </form>

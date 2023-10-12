@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+// import { useCart } from 'react-use-cart'
 import iSHOP from "../assests/iSHOP.png"
 import "./css.css"
 

@@ -31,7 +31,7 @@ const Home = () => {
           <div class="carousel-item active">
             <img
               class="d-block w-100"
-              src="https://cdn.thegeekherald.com/wp-content/uploads/2021/04/fmvHKrrEtTParjkThaBpfU-scaled.jpg"
+              src="https://tse2.mm.bing.net/th?id=OIP.jDxzKqNtAf52YXjSspn2XwHaEK&pid=Api&P=0"
               alt="First slide"
               height="500px"
             />
@@ -47,7 +47,7 @@ const Home = () => {
           <div class="carousel-item">
             <img
               class="d-block w-100"
-              src="https://tse2.mm.bing.net/th?id=OIP.jDxzKqNtAf52YXjSspn2XwHaEK&pid=Api&P=0"
+              src="https://tse4.mm.bing.net/th?id=OIP.8uwyloqX639rc6cvKn9C3wHaEe&pid=Api&P=0&h=180"
               alt="Third slide"
               height="500px"
             />

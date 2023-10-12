@@ -24,6 +24,7 @@ function App() {
       >
         <i class="fa-solid fa-arrow-right-to-bracket"></i> Login
       </button></Link>
+      <button style={{position:"relative", top:"49px" , right:"60px",borderRadius:"50%"}}><i class="fa-solid fa-user"></i></button>
       <CartProvider>
       <Nav/>
       <Routes>

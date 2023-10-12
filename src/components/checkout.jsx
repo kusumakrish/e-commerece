@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { useCart } from "react-use-cart"
 
-const Checkout = () => {
+const Checkout = ({user}) => {
     const { 
         items,
         cartTotal,
-        totalUniqueItems
+        totalUniqueItems,
          } = useCart();
          console.log(items);
   return (
@@ -199,7 +200,7 @@ const Checkout = () => {
 
           <hr className="my-4"/>
 
-          <button className="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+          <Link to="/Login"><button className="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button></Link>
         </form>
       </div>
     </div>

@@ -2,7 +2,7 @@ const express = require("express");
 const Route = require("./authentication");
 const Login = require("./login");
 const cors = require("cors");
-
+const { user } = require("./db");
 
 const app = express();
 
@@ -14,10 +14,10 @@ app.use("/login",Login);
 
 app.use("/Auth", Route);
 
-
 app.get("/", (req,res)=>{
     res.send("hellow");
 })
+
 
 app.listen( process.env.PORT || 9090 , ()=>{
     console.log("server is running");
